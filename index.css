@@ -51,6 +51,11 @@ h1 {
     border: none;
     background-color: #2f2944;
     border-radius: 4px 0 0 4px;
+    color: var(--text-color);
+}
+
+#search-input::placeholder {
+    color: var(--text-color);
 }
 
 #search-form button {
