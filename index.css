@@ -154,38 +154,3 @@ a:hover {
 #socials { animation-delay: 0.1s; }
 #school { animation-delay: 0.2s; }
 #coding { animation-delay: 0.3s; }
-
-#search-form {
-    display: flex;
-    margin-bottom: 2rem;
-    align-items: center; /* Align input and button horizontally */
-}
-
-#search-input {
-    flex-grow: 1;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background-color: #2f2944;
-    color: var(--text-color);
-    border-radius: 4px 0 0 4px;
-}
-
-#search-btn {
-    width: 36px;
-    height: 36px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Magnifying_glass_icon.svg/1024px-Magnifying_glass_icon.svg.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: #2f2944; /* Match the input field color */
-    transition: background-color 0.3s ease;
-    margin-left: 5px; /* Adds some space between the input and button */
-}
-
-#search-btn:hover {
-    background-color: #3b2e5d; /* Darker shade on hover */
-}
