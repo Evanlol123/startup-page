@@ -58,6 +58,11 @@ h1 {
     color: var(--text-color);
 }
 
+#search-input:focus {
+    background-color: #3b2e5d;
+    outline: none;
+}
+
 #search-form button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
