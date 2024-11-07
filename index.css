@@ -63,11 +63,11 @@ h1 {
     transition: background-color 0.3s ease;
     color: var(--text-color);
     background-color: #2f2944;
-    padding-left: 5px;
+    padding-left: 5rem;
 }
 
 #search-form button:hover {
-    background-color: #2f2944;
+    background-color: #3b2e5d;
 }
 
 main {
