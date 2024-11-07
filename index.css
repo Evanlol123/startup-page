@@ -50,15 +50,12 @@ h1 {
     font-size: 1rem;
     border: none;
     background-color: #2f2944;
-    color: var(--text-color);
     border-radius: 4px 0 0 4px;
 }
 
 #search-form button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: var(--mauve);
-    color: var(--base);
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
