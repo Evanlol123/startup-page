@@ -4,46 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Tab</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cloudflare-icons/1.0.0/css/cloudflare-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Welcome Back!</h1>
-            <p id="date-time"></p>
-        </header>
+        <h1>Custom New Tab</h1>
         <form id="search-form">
-            <input type="text" id="search-input" placeholder="Search Google...">
+            <input type="text" id="search-input" placeholder="">
             <button type="submit">Search</button>
         </form>
-        <main>
-            <section id="socials" class="card">
-                <h2>Media</h2>
-                <ul>
-                    <li><a href="https://discord.com" class="icon-link"><i class="fab fa-discord"></i> Discord</a></li>
-                    <li><a href="https://www.instagram.com" class="icon-link"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a href="https://messages.google.com" class="icon-link"><i class="fab fa-google"></i> Google Messages</a></li>
-                    <li><a href="https://github.com/" class="icon-link"><i class="fab fa-github"></i> GitHub</a></li>
-                </ul>
-            </section>
-            <section id="school" class="card">
-                <h2>School</h2>
-                <ul>
-                    <li><a href="#" class="icon-link"><i class="fabcfi-book"></i> Course Portal</a></li>
-                    <li><a href="#" class="icon-link"><i class="fab cfi-calendar"></i> Schedule</a></li>
-                    <li><a href="#" class="icon-link"><i class="fab cfi-mail"></i> Student Email</a></li>
-                </ul>
-            </section>
-            <section id="coding" class="card">
+        <div class="bookmarks">
+            <div class="bookmark-card">
                 <h2>Coding</h2>
                 <ul>
-                    <li><a href="#" class="icon-link"><i class="fab cfi-code"></i> VS Code</a></li>
-                    <li><a href="#" class="icon-link"><i class="fab fa-github"></i> GitHub</a></li>
-                    <li><a href="#" class="icon-link"><i class="fab cfi-bookmark"></i> Stack Overflow</a></li>
+                    <li><a href="https://github.com"><i class="fab fa-github"></i>GitHub</a></li>
+                    <li><a href="https://www.w3schools.com"><i class="fa fa-code"></i>W3 Schools</a></li>
+                    <li><a href="https://vscode.dev"><i class="fas fa-code-branch"></i>VS Code</a></li>
+                    <li><a href="https://chat.openai.com"><i class="fas fa-robot"></i>ChatGPT</a></li>
+                    <li><a href="https://v0.dev"><i class="fas fa-terminal"></i>v0.dev</a></li>
                 </ul>
-            </section>
-        </main>
+            </div>
+            <div class="bookmark-card">
+                <h2>School</h2>
+                <ul>
+                    <li><a href="https://hcpss.instructure.com"><i class="fas fa-graduation-cap"></i>Canvas</a></li>
+                    <li><a href="https://www.deltamath.com"><i class="fas fa-calculator"></i>DeltaMath</a></li>
+                    <li><a href="https://www.khanacademy.org"><i class="fas fa-book"></i>Khan Academy</a></li>
+                </ul>
+            </div>
+            <div class="bookmark-card">
+                <h2>Apps</h2>
+                <ul>
+                    <li><a href="https://discord.com/app"><i class="fab fa-discord"></i>Discord</a></li>
+                    <li><a href="https://messages.google.com"><i class="fas fa-comment"></i>Google Messages</a></li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://web.snapchat.com"><i class="fab fa-snapchat-ghost"></i>Snapchat</a></li>
+                    <li><a href="https://reddit.com"><i class="fab fa-reddit"></i>Reddit</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
