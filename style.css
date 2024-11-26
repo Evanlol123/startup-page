@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #1e1e2c;
+  --text-color: #cdd6f4;
+  --border-color: #3a344e;
+  --hover-bg-color: #242036;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Fredoka', sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+#search-form {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+#search-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#search-input::placeholder {
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  border-radius: 8px;
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--hover-bg-color);
+  transform: scale(1.05);
+}
+
+.bookmarks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bookmark-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  flex: 1 1 calc(33.33% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bookmark-card:hover {
+  transform: scale(1.02);
+  background-color: var(--hover-bg-color);
+}
+
+.bookmark-card h2 {
+  color: var(--text-color);
+  margin-top: 0;
+}
+
+.bookmark-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bookmark-card li {
+  margin-bottom: 10px;
+}
+
+.bookmark-card a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.bookmark-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .bookmarks {
+    flex-direction: column;
+  }
+
+  .bookmark-card {
+    flex: 1 1 100%;
+  }
+}
